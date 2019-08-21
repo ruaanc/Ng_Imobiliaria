@@ -16,6 +16,9 @@ import { EditImovelComponent } from './Imovel/edit-imovel/edit-imovel.component'
 import { ListImovelComponent } from './Imovel/list-imovel/list-imovel.component';
 import { ShowImovelComponent } from './Imovel/show-imovel/show-imovel.component';
 import { ShowUsuarioComponent } from './Usuario/show-usuario/show-usuario.component';
+import { EditUsuarioComponent } from './Usuario/edit-usuario/edit-usuario.component';
+import { ListUsuarioComponent } from './Usuario/list-usuario/list-usuario.component';
+import { NewUsuarioComponent } from './Usuario/new-usuario/new-usuario.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ShowUsuarioComponent } from './Usuario/show-usuario/show-usuario.compon
     EditImovelComponent,
     ListImovelComponent,
     ShowImovelComponent,
-    ShowUsuarioComponent
+    ShowUsuarioComponent,
+    EditUsuarioComponent,
+    ListUsuarioComponent,
+    NewUsuarioComponent
   ],
   imports: [
     BrowserModule,
