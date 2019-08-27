@@ -9,8 +9,9 @@ export class Cliente {
     private _endereco: Endereco
 
 
-    constructor(theNome: string, theRg: number, theTelefone: string, theEmail: string,theProfissao: string, theEndereco: Endereco) {
+     constructor(theId: number, theNome: string, theRg: number, theTelefone: string, theEmail: string,theProfissao: string, theEndereco: Endereco) {
 
+        this.id = theId
         this._nomeCompleto = theNome
         this._rg = theRg
         this._telefone = theTelefone

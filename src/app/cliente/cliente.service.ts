@@ -47,4 +47,12 @@ export class ClienteService {
     return velhoCliente
   }
 
+  changeMessage(message: string) {
+    this.appService.changeMessage(message)
+  }
+
+  clearMessage() {
+    this.appService.clearMessage()
+  }
+
 }
