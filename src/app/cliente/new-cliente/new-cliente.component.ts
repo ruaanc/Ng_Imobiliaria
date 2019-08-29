@@ -21,9 +21,9 @@ export class NewClienteComponent {
   onSubmit(form: any){
     this.endereco = new Endereco(form.rua, form.numero, form.cidade, form.estado)
     if(this.tipoCLiente.toUpperCase() == 'LOCATARIO'){
-      this.cliente = new ClienteLocatario(null, form.name, form.rg, form.telefone, form.email, form.profissao, this.endereco, null)
+      this.cliente = new ClienteLocatario(null, form.name, form.rg, form.telefone, form.email, form.profissao, this.endereco, null, null)
     }else{
-      this.cliente = new ClienteLocador(null, form.name, form.rg, form.telefone, form.email, form.profissao, this.endereco, null)
+      this.cliente = new ClienteLocador(null, form.name, form.rg, form.telefone, form.email, form.profissao, this.endereco,null, null)
     }
     this.cliente = this.clienteService.add(this.cliente)
     this.clienteService.changeMessage(`Cliente criado com sucesso !`)
