@@ -4,11 +4,11 @@ export class Cliente {
 
     constructor(
          public id: number, 
-         private theNome: string, 
-         private theRg: number, 
-         private theTelefone: string, 
-         private theEmail: string, 
-         private theProfissao: string, 
-         private theEndereco: Endereco, private tipo: TipoCliente) {}  
+         private nome: string, 
+         private rg: number, 
+         private telefone: string, 
+         private email: string, 
+         private profissao: string, 
+         private endereco: Endereco, private tipo: TipoCliente) {}  
 
 }

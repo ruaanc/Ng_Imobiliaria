@@ -9,7 +9,9 @@ import { Cliente } from './../cliente'
 })
 export class ListClientesComponent implements OnInit {
 
-  constructor(private clienteService: ClienteService, private clientes: Cliente[]) {
+  public clientes: Cliente[]
+
+  constructor(private clienteService: ClienteService) {
     this.clientes = this.clienteService.getAll()
    }
 
