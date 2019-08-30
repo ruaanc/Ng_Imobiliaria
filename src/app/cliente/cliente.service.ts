@@ -35,7 +35,7 @@ export class ClienteService {
   cli9: Cliente = new ClienteLocador(9, 'Alexandre Darze', 907539840, '(83) 5482-5888', 'alexandre@gmail.com','Motorista', this.end9, TipoCliente.LOCADOR, '097463297')
   cli10: Cliente = new ClienteLocador(10, 'André Varejão', 907439862, '(83) 9601-6238', 'andre@gmail.com','Motorista', this.end1, TipoCliente.LOCADOR, '9438428629')
 
-  clientes: Cliente[] = []
+  clientes: Cliente[] = [this.cli1, this.cli2, this.cli3, this.cli4, this.cli5, this.cli6, this.cli7, this.cli8, this.cli9, this.cli10]
 
   constructor(private appService: AppService) { }
 
