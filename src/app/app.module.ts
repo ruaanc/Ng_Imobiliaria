@@ -19,6 +19,7 @@ import { ShowUsuarioComponent } from './Usuario/show-usuario/show-usuario.compon
 import { EditUsuarioComponent } from './Usuario/edit-usuario/edit-usuario.component';
 import { ListUsuarioComponent } from './Usuario/list-usuario/list-usuario.component';
 import { NewUsuarioComponent } from './Usuario/new-usuario/new-usuario.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { NewUsuarioComponent } from './Usuario/new-usuario/new-usuario.component
     ShowUsuarioComponent,
     EditUsuarioComponent,
     ListUsuarioComponent,
-    NewUsuarioComponent
+    NewUsuarioComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
