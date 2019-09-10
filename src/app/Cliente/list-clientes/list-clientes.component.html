@@ -1,0 +1,18 @@
+<div style="overflow: auto;">
+    <table >   
+        <thead>
+            <tr>
+                <th> Nome <i class="fa fa-sort-down"></i> </th>
+                <th> Tipo De Cliente <i class="fa fa-sort-down"></i> </th>
+                <th>Status <i class="fa fa-sort-down"></i> </th>
+            </tr>
+        </thead>
+        <tbody>  
+            <tr *ngFor = "let cliente of clientes">
+                <td>{{ cliente.nome }}</td>
+                <td>{{ cliente.tipo }}</td>
+                <td> Ativo </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
