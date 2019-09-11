@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { ClienteModule } from './Cliente/cliente/cliente.module';
 import { ClienteService } from './Cliente/cliente.service';
 import { MenuComponent } from './menu/menu.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
