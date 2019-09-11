@@ -1,3 +1,25 @@
 div {
     border-style: groove;
 }
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+  
+tr:nth-of-type(odd) { 
+    background: #eee; 
+}
+th { 
+    background: rgb(187, 186, 186);
+    color: white; 
+    font-weight: bold; 
+}
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+}
+
+.fa-sort-down{
+    float: right
+}
