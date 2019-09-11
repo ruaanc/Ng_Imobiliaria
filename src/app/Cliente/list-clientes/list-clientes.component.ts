@@ -15,8 +15,6 @@ export class ListClientesComponent implements OnInit {
     this.clientes = this.clienteService.getAll()
    }
 
-
-
   ngOnInit() {
   }
 
