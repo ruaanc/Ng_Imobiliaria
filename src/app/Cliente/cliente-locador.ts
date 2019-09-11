@@ -12,7 +12,7 @@ export class ClienteLocador extends Cliente {
         theEmail: string,
         theProfissao: string, 
         theEndereco: Endereco, 
-        tipo: TipoCliente, 
+        tipo: string, 
         private theCpf: string) {
         super(theId, theNome, theRg, theTelefone, theEmail, theProfissao, theEndereco, tipo)
 	}
