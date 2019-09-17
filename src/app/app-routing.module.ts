@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ListClientesComponent } from './Cliente/list-clientes/list-clientes.component';
+import { NewClienteComponent } from './Cliente/new-cliente/new-cliente.component';
 
 const routes: Routes = [
-  { path: 'clientes', component: ListClientesComponent }
+  { path: 'clientes', component: ListClientesComponent }, 
+  { path: 'newCliente', component: NewClienteComponent }
 ];
 
 @NgModule({
