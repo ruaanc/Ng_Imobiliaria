@@ -9,12 +9,13 @@
             </tr>
         </thead>
         <tbody>  
-            <tr *ngFor = "let cliente of clientes">
+            <tr *ngFor = "let cliente of clientes | paginate: { itemsPerPage: 5, currentPage: paginaAtual };">
                 <td>{{ cliente.nome }}</td>
                 <td>{{ cliente.tipo }}</td>
                 <td> Ativo </td>
             </tr>
         </tbody>
+        <pagination-controls (pageChange)="paginaAtual = $event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
     </table>
 </div>
     
