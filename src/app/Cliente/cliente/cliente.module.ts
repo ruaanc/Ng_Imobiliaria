@@ -7,6 +7,7 @@ import { NewClienteComponent } from './../new-cliente/new-cliente.component';
 import { ShowClienteComponent } from './../show-cliente/show-cliente.component';
 import { ClienteService } from './../cliente.service';
 import { OpcoesClientesComponent } from './../opcoes-clientes/opcoes-clientes.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OpcoesClientesComponent } from './../opcoes-clientes/opcoes-clientes.co
     OpcoesClientesComponent  
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgxPaginationModule
   ],
   exports: [
     EditClienteComponent,

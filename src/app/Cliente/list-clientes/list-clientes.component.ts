@@ -10,12 +10,13 @@ import { Cliente } from './../cliente'
 export class ListClientesComponent implements OnInit {
 
   public clientes: Cliente[]
+  public paginaAtual = 1; 
 
   constructor(private clienteService: ClienteService) {
     this.clientes = this.clienteService.getAll()
    }
 
-
+   
 
   ngOnInit() {
   }
