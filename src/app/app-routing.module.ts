@@ -6,7 +6,7 @@ import { ListClientesComponent } from './Cliente/list-clientes/list-clientes.com
 import { NewClienteComponent } from './Cliente/new-cliente/new-cliente.component';
 
 const routes: Routes = [
-  { path: 'clientes', component: ListClientesComponent }, 
+  { path: '', component: ListClientesComponent }, 
   { path: 'newCliente', component: NewClienteComponent }
 ];
 
