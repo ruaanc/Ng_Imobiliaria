@@ -1,21 +1,26 @@
-<app-opcoes-clientes></app-opcoes-clientes>
-<div style="overflow: auto;">
-    <table >   
-        <thead>
-            <tr>
-                <th> Nome <i class="fa fa-sort-down"></i> </th>
-                <th> Tipo De Cliente <i class="fa fa-sort-down"></i> </th>
-                <th>Status <i class="fa fa-sort-down"></i> </th>
-            </tr>
-        </thead>
-        <tbody>  
-            <tr *ngFor = "let cliente of clientes | paginate: { itemsPerPage: 5, currentPage: paginaAtual };">
-                <td>{{ cliente.nome }}</td>
-                <td>{{ cliente.tipo }}</td>
-                <td> Ativo </td>
-            </tr>
-        </tbody>
-        <pagination-controls (pageChange)="paginaAtual = $event" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
-    </table>
+<div class="container">
+    <div style="overflow: auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th> Nome <i class="fa fa-sort-down"></i> </th>
+                    <th> Tipo De Cliente <i class="fa fa-sort-down"></i> </th>
+                    <th>Status <i class="fa fa-sort-down"></i> </th>
+                    <th>Ações <i class="fa fa-sort-down"></i> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clientes | paginate: { itemsPerPage: 5, currentPage: paginaAtual };">
+                    <td>{{ cliente.nome }}</td>
+                    <td>{{ cliente.tipo }}</td>
+                    <td> Ativo </td>
+                    <td>
+                        <app-opcoes-clientes></app-opcoes-clientes>
+                    </td>
+                </tr>
+            </tbody>
+            <pagination-controls (pageChange)="paginaAtual = $event" previousLabel="Anterior" nextLabel="Próximo">
+            </pagination-controls>
+        </table>
+    </div>
 </div>
-    
