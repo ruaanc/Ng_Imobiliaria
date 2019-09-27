@@ -1,3 +1,8 @@
-div {
-
-} 
+.actions{
+    padding-left: 20%;
+}
+.actions button{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}

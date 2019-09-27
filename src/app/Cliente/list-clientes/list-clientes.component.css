@@ -24,13 +24,3 @@ td, th {
 .container{
     padding-top: 50px;
 }
-
-.actions{
-    padding-left: 20%;
-}
-
-.actions button{
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
