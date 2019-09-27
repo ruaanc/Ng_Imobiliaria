@@ -1,6 +1,3 @@
-div {
-    border-style: groove;
-}
 table { 
     width: 100%; 
     border-collapse: collapse; 
@@ -22,4 +19,18 @@ td, th {
 
 .fa-sort-down{
     float: right
+}
+
+.container{
+    padding-top: 50px;
+}
+
+.actions{
+    padding-left: 20%;
+}
+
+.actions button{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
 }
